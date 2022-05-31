@@ -1,6 +1,11 @@
 ---
 - name: Install nginx
-  yum: name=nginx state=present
+  apt: name=nginx state=present
+
+- name: Delete default nginx config files & directory
+  file:
+    state: absent
+    path: /etc/nginx/sites-enabled/default
 
 - name: Copy nginx configuration for wordpress
   template: 

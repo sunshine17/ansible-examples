@@ -25,4 +25,4 @@ auto_up_disable: false
 #minor = Minor updates are enabled, development, and major updates are disabled
 core_update_level: true
 
-php_server_addr: localhost
+#php_server_addr: localhost:9090

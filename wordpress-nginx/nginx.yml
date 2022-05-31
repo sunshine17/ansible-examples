@@ -2,5 +2,7 @@
 - name: Install Nginx
   hosts: localhost
   become: true
+  vars_files:
+      - group_vars/nginx.yml
   roles:
     - nginx
